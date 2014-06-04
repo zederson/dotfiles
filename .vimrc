@@ -13,3 +13,5 @@ set ruler
 
 set showbreak=...
 set wrap linebreak nolist
+
+set paste

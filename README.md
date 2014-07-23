@@ -16,3 +16,8 @@ mkdir -p ~/.vim/bundle
 cd ~/.vim/bundle
 git clone git://github.com/godlygeek/tabular.git
 ```
+
+Deixa como padrão as teclas de F[1-12] e não as funções de som, contraste, ... APENAS PARA LINUX
+```bash
+echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode
+```

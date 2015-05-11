@@ -1,3 +1,7 @@
+# use mac
+source /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
+source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
+
 # ==============================================================================
 # SOME VARIABLES in capitals
 # no whitespace between variable names and = sign!

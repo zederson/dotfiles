@@ -2,19 +2,21 @@
 my configurations environment
 
 ## Plugins to VIM
-Installation janus to vim
-[Github Janus](https://github.com/carlhuda/janus)
+Installation Vundle
+[Github Vundle](https://github.com/gmarik/Vundle.vim)
 
 ```bash
-$ curl -Lo- https://bit.ly/janus-bootstrap | bash
+$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
-Plugin Tabular
-[Github Tabular](https://github.com/godlygeek/tabular)
+Install Plugin YouCompleteMe
+[Github YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 Install
 ```bash
-mkdir -p ~/.vim/bundle
-cd ~/.vim/bundle
-git clone git://github.com/godlygeek/tabular.git
+brew install cmake
+```
+```bash
+cd ~/.vim/bundle/YouCompleteMe
+./install.sh --clang-completer
 ```
 
 Deixa como padrão as teclas de F[1-12] e não as funções de som, contraste, ... APENAS PARA LINUX

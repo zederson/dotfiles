@@ -10,7 +10,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'sjl/badwolf'
+" Plugin 'sjl/badwolf'
 
 Plugin 'bling/vim-airline'
 
@@ -22,7 +22,7 @@ Plugin 'tpope/vim-fugitive'
 
 Plugin 'tpope/vim-commentary'
 Plugin 'Raimondi/delimitMate'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'SirVer/UltiSnips'
 Plugin 'honza/vim-snippets'
 
@@ -31,6 +31,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'mileszs/ack.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'godlygeek/tabular'
+Plugin 'terryma/vim-multiple-cursors'
 
 call vundle#end()
 filetype plugin indent on
@@ -51,7 +52,7 @@ set number                         " show the line number for each line
 set numberwidth=5                  " number of columns to use for the line number
 
 syntax enable                      " enable syntax highlighting
-colorscheme badwolf                " set default colorscheme
+" colorscheme badwolf                " set default colorscheme
 
 " some colorscheme adjustments
 highlight VertSplit ctermfg=235 ctermbg=235

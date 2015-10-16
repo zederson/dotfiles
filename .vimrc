@@ -8,27 +8,26 @@ filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
 Plugin 'gmarik/Vundle.vim'
-
-" Plugin 'sjl/badwolf'
-
 Plugin 'bling/vim-airline'
-
 Plugin 'tpope/vim-vinegar'
 Plugin 'kien/ctrlp.vim'
-Plugin 'rking/ag.vim'
 
+Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
 
 Plugin 'tpope/vim-commentary'
 Plugin 'Raimondi/delimitMate'
-" Plugin 'Valloric/YouCompleteMe'
 Plugin 'SirVer/UltiSnips'
 Plugin 'honza/vim-snippets'
 
 Plugin 'tpope/vim-rails'
 Plugin 'scrooloose/nerdtree'
+
 Plugin 'mileszs/ack.vim'
+" Plugin 'rking/ag.vim'
+
 Plugin 'majutsushi/tagbar'
 Plugin 'godlygeek/tabular'
 Plugin 'terryma/vim-multiple-cursors'
@@ -110,7 +109,8 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" buffer usage
+" " Clear highlight
+nmap \q :nohlsearch<CR>
 
 " open a new empty buffer
 nmap <leader>N :enew<cr>
@@ -157,8 +157,8 @@ if executable('ag')
 endif
 
 " airline
-let g:airline_left_sep = '>'                       " set left separator
-let g:airline_right_sep = '<'                      " set right separator
+let g:airline_left_sep = '>'                      " set left separator
+let g:airline_right_sep = '<'                     " set right separator
 let g:airline#extensions#tabline#enabled = 1      " enable list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t'  " show filename only
 let g:airline#extensions#tagbar#enabled = 0       " disable tagbar integration (speed up startup time)
@@ -193,4 +193,3 @@ else
 endif
 
 "" .vimrc ends here
-

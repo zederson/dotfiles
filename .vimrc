@@ -11,6 +11,7 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
+
 Plugin 'tpope/vim-vinegar'
 Plugin 'kien/ctrlp.vim'
 
@@ -156,13 +157,17 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
+
 " airline
-let g:airline_left_sep = '>'                      " set left separator
-let g:airline_right_sep = '<'                     " set right separator
+let g:airline_left_sep = '▶'                      " set left separator
+let g:airline_right_sep = '◀'                     " set right separator
 let g:airline#extensions#tabline#enabled = 1      " enable list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t'  " show filename only
-let g:airline#extensions#tagbar#enabled = 0       " disable tagbar integration (speed up startup time)
-let g:airline_detect_modified=1
+let g:airline#extensions#tagbar#enabled = 1       " disable tagbar integration (speed up startup time)
+let g:airline_detect_modified = 1
+let g:airline#extensions#tabline#left_sep = '▶'
+let g:airline#extensions#tabline#left_alt_sep = '|'
+
 
 " make ultisnips and youcompleteme play well together
 let g:ycm_key_list_select_completion=['<C-n>', '<Down>']

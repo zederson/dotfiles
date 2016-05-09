@@ -11,9 +11,8 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
-
 Plugin 'tpope/vim-vinegar'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
@@ -32,6 +31,8 @@ Plugin 'mileszs/ack.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'godlygeek/tabular'
 Plugin 'terryma/vim-multiple-cursors'
+
+" Plugin 'fatih/vim-go'
 
 call vundle#end()
 filetype plugin indent on

@@ -32,7 +32,10 @@ Plugin 'majutsushi/tagbar'
 Plugin 'godlygeek/tabular'
 Plugin 'terryma/vim-multiple-cursors'
 
-" Plugin 'fatih/vim-go'
+Plugin 'fatih/vim-go'
+Plugin 'venantius/vim-eastwood'
+Bundle 'wakatime/vim-wakatime'
+
 
 call vundle#end()
 filetype plugin indent on

@@ -8,6 +8,8 @@ Installation Vundle
 ```bash
 $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
+Após executar o git clone será necessário copiar o arquivo *dotfiles/.vimrc* que estará no diretório dotfiles para a sua home *~/.vimrc*.
+
 Install Plugin YouCompleteMe
 [Github YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 Install

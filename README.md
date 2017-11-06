@@ -25,3 +25,9 @@ Deixa como padrão as teclas de F[1-12] e não as funções de som, contraste, .
 ```bash
 echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode
 ```
+
+## Formatar XML
+```
+:%!XMLLINT_INDENT="^I" xmllint --format -
+```
+No lugar de `^I`,  usar CTRL+v,CTRL+i

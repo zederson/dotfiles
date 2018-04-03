@@ -63,4 +63,11 @@ PS1='\e[36m\]___________________________________________________________________
 # PS1='\e[36m________________________________________________________________________________\n\[\e[33m\]\h:\W$(__git_ps1 "\[\e[36m\][ %s $(parse_git_dirty) ]\[\e[0m\]\[\e[0;33m\]\[\e[0m\]")\n\[\e[0m\]$ '
 
 # set terminal to vi mode - http://blog.sanctum.geek.nz/vi-mode-in-bash/
-set -o vi
+# set -o vi
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+git config --global user.name "Ederson de Lima"
+git config --global user.email edersondelima@gmail.com
+git config --global core.editor "vim"

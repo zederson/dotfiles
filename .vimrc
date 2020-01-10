@@ -36,6 +36,8 @@ Plugin 'fatih/vim-go'
 Plugin 'venantius/vim-eastwood'
 Bundle 'wakatime/vim-wakatime'
 
+Plugin 'elixir-editors/vim-elixir'
+
 
 call vundle#end()
 filetype plugin indent on
